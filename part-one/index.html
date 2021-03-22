@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <title>LuckyNum</title>
+  <script src="https://unpkg.com/jquery"></script>
+</head>
+<body>
+
+<form id="lucky-form">
+  <div>
+    Number 1: <input id="num1" aria-label="Name">
+    <b class="error" id="num1-err"></b>
+  </div>
+  <div>
+    Number 2: <input id="num2" aria-label="Name">
+    <b class="error" id="num2-err"></b>
+  </div>
+  <div>
+    Number 3: <input id="num3" aria-label="Name">
+    <b class="error" id="num3-err"></b>
+  </div>
+  <button type="submit">Click Me for Facts</button>
+</form>
+
+<div id="lucky-results"></div>
+
+<br>
+<br>
+
+<form id="multiple-form">
+  <div>
+    Lucky Number: <input id="lucky-num" aria-label="Name">
+    <b class="error" id="lucky-num-err"></b>
+  </div>
+  <button type="submit">Click Me for Facts</button>
+</form>
+
+<div id="multiple-facts"></div>
+
+
+
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="numbers.js"></script>
+
+</body>
+</html>
