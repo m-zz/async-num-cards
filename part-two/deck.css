@@ -1,0 +1,25 @@
+body {
+  background-color: green;
+  text-align: center;
+}
+
+#get-card {
+  background-color: red;
+  color: white;
+  border-radius: 5em;
+}
+
+img {
+  position: absolute;
+}
+
+#card-results{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10rem;
+}
+
+#deck-err {
+  margin-top: 400px;
+}
