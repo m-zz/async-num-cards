@@ -1,14 +1,16 @@
 async function getPokemon () {
   let id = Math.floor(Math.random() * numPoke);
   let mainResult;
-  
-  try {
-    mainResult = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}/`);
-  } catch (e) {
-    while (!mainResult) {
+
+
+  while (!mainResult) {
+    try {
       mainResult = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}/`);
+    } catch (e) {
+      id = Math.floor(Math.random() * numPoke);
     }
   }
+  
   
   let image = mainResult.data.sprites.front_default;
   let name = mainResult.data.name;
